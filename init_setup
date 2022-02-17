@@ -2,7 +2,7 @@
 
 ### install xmonad, a Haskell-based window manager, its default terminal and common utilities for it ###
 sudo pacman -Syu
-sudo pacman -S xorg-server xorg-xinit xmonad xmonad-contrib
+sudo pacman -S xorg-server xorg-xinit xmonad xmonad-contrib xmobar
 
 #sudo apt install xserver-xorg-core
 #sudo apt install xmonad xterm libghc-xmonad-contrib-dev libghc-xmonad-dev suckless-tools
@@ -10,6 +10,7 @@ sudo pacman -S xorg-server xorg-xinit xmonad xmonad-contrib
 cp {.xinitrc,.bash_profile} ~/
 mkdir ~/.xmonad
 cp xmonad.hs ~/.xmonad/
+cp .xmobarrc ~/
 cd ~/.xmonad
 xmonad --recompile
 ### end install of xmonad, etc. ###
