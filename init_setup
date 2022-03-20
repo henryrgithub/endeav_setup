@@ -2,7 +2,7 @@
 
 ### install xmonad, a Haskell-based window manager, its default terminal and common utilities for it ###
 sudo pacman -Syu
-sudo pacman -S xorg-server xorg-xinit xmonad xmonad-contrib xmobar
+sudo pacman -S xorg-server xorg-xinit xmonad xmonad-contrib xmobar xterm firefox github-cli
 
 #sudo apt install xserver-xorg-core
 #sudo apt install xmonad xterm libghc-xmonad-contrib-dev libghc-xmonad-dev suckless-tools
@@ -16,11 +16,7 @@ xmonad --recompile
 ### end install of xmonad, etc. ###
 
 ### setup github ###
-#curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/etc/apt/trusted.gpg.d/githubcli-archive-keyring.gpg
-#echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/trusted.gpg.d/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-#sudo apt update
-#sudo apt install gh firefox
-sudo pacman -S firefox github-cli
+#sudo pacman -S firefox github-cli
 gh auth login
 echo "Please enter git username:"
 read USERNAME
